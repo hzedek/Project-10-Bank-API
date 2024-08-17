@@ -1,10 +1,12 @@
 import React, { Fragment } from "react";
-import Home from "../Componants/Home";
+import HomeMain from "../Componants/Home";
+import Header from "../Componants/Header";
 
 function Home() {
   return (
     <Fragment>
-      <Home />
+      <Header/>
+      <HomeMain />
     </Fragment>
   );
 }
