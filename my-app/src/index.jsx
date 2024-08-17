@@ -5,6 +5,7 @@ import Footer from "./Componants/Footer";
 // import Error404 from "./Pages/404";
 import Home from "./Pages/Home";
 import SignUp from "./Pages/SignUp"
+import UserProfile from "./Pages/UserProfile";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +14,8 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/UserProfile" element={<UserProfile />} />
+
         {/* <Route path="*" element={<Error404 />} /> */}
       </Routes>
     </Router>
