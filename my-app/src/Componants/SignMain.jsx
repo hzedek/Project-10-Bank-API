@@ -1,7 +1,7 @@
 import "../style/main.css";
 import { useSelector, useDispatch } from "react-redux";
 import { loginUser } from "../Slice/loginSlice";
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function SignMain() {
@@ -19,6 +19,14 @@ function SignMain() {
       }
     });
   };
+
+  const token = useSelector((state) => state.auth.token);
+
+  useEffect(() => {
+    if (token) {
+      navigate('/UserProfile');
+    } 
+  }, [token, navigate]);
 
   return (
     <main className="main bg-dark">
