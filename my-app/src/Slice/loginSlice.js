@@ -45,7 +45,7 @@ export const fetchUserProfile = createAsyncThunk(
           },
         }
       );
-      console.log(response); // Ajoutez cette ligne pour vérifier la réponse
+      console.log(response); 
 
       const data = await response.json();
 
