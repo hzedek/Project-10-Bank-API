@@ -49,7 +49,7 @@ function User() {
         <h1>
           Welcome back
           <br />
-          {isEditing ? "" : (user ? `${user.firstName}` : "User")}
+          {isEditing ? "" : (user ? `${user.firstName+" "+user.lastName}` : "User")}
         </h1>
         {isEditing ? (
           <div className="inputBtn">
